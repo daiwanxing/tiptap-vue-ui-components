@@ -3,3 +3,28 @@ description:
 globs:
 alwaysApply: false
 ---
+# 代码风格指南
+
+## ESLint 配置
+项目使用 ESLint 9 的扁平配置系统，配置文件位于 [eslint.config.js](mdc:eslint.config.js)。
+
+## 主要代码规范
+1. 变量和函数命名：
+   - 使用 camelCase
+   - 类型和接口使用 PascalCase
+   - 常量使用 UPPER_SNAKE_CASE
+
+2. TypeScript 规范：
+   - 禁止使用 `any`，除非特殊情况（会触发 warning）
+   - 未使用的变量必须删除或以 `_` 前缀命名
+   - 启用严格模式 (`strict: true`)
+
+3. Vue 组件规范：
+   - 组件名称可以是单个词（已关闭 `vue/multi-word-component-names` 规则）
+   - 使用 Composition API
+   - Props 必须定义类型
+   - 优先使用 `<script setup>` 语法
+
+4. 导入规范：
+   - 使用 ES 模块语法 (`import`/`export`)
+   - 类型导入使用 `import type`

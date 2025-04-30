@@ -3,3 +3,24 @@ description:
 globs:
 alwaysApply: false
 ---
+# 项目结构指南
+
+## 配置文件
+- [tsconfig.app.json](mdc:tsconfig.app.json): TypeScript 配置文件
+- [eslint.config.js](mdc:eslint.config.js): ESLint 9 扁平配置文件
+- [package.json](mdc:package.json): 项目依赖和脚本配置
+
+## 目录结构
+- `src/`: 源代码目录
+  - `components/`: Vue 组件
+  - `types/`: TypeScript 类型定义
+  - `utils/`: 工具函数
+
+## 开发规范
+1. 使用 TypeScript 进行开发
+2. 使用 Vue 3 Composition API
+3. 组件命名采用 PascalCase
+4. 文件命名规则：
+   - 组件文件：`.vue`
+   - 类型定义：`.d.ts`
+   - 工具函数：`.ts`
